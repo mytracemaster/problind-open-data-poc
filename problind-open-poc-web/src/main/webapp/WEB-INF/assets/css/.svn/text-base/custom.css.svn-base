@@ -1,0 +1,74 @@
+/* here you can put your own css to customize and override the theme */
+#countdown{
+	color: #e02222;
+	font-weight: 300;
+	font-size: 38px;
+	line-height: 38px;
+}
+
+.dash{
+  text-decoration: none !important;
+}
+
+.dash a{
+  text-decoration: none !important;
+}
+
+.dash a:hover{
+  text-decoration: none !important;
+  opacity: 1;  
+  filter: alpha(opacity=70);
+}
+
+.veiculoDesenv{
+	color: red !important;
+}
+
+.tdBranco{
+	background-color:#FFFFFF !important;
+	width:5px !important;
+	height:30px !important;
+}
+
+.tdVerde{
+	background-color:#34A745 !important;
+	width:5px !important;
+	height:30px !important;
+}
+
+.tdAzul{
+	background-color:#4B8DF8 !important;
+	width:5px !important;
+	height:30px !important;
+}
+
+.tdLaranja{
+	background-color:#FFB848 !important;
+	width:5px !important;
+	height:30px !important;
+}
+
+.tdVermelho{
+	background-color:red !important;
+	width:5px !important;
+	height:30px !important;
+}
+
+.tdAmarelo{
+	background-color:#FFFF00 !important;
+	width:5px !important;
+	height:30px !important;
+}
+
+.tdPreto{
+	background-color:#000000 !important;
+	width:5px !important;
+	height:30px !important;
+}
+
+.chart {
+  border:1px solid #cccccc;
+  width: 100%; 
+  height: 420px;
+}
+

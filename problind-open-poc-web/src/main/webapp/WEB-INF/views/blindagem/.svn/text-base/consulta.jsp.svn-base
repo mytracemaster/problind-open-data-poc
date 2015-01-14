@@ -1,0 +1,296 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@taglib prefix="m" uri="menu"%>
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+<jsp:include page="/WEB-INF/jsp/common/header.jsp" />
+
+<!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/assets/plugins/bootstrap-select/bootstrap-select.min.css"/>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/assets/plugins/select2/select2.css"/>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/assets/plugins/select2/select2-metronic.css"/>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/assets/plugins/jquery-multi-select/css/multi-select.css"/>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/assets/plugins/data-tables/DT_bootstrap.css"/>
+<!-- END PAGE LEVEL PLUGIN STYLES -->
+
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed">
+
+	<form class="blindagem-form form-horizontal" role="form" method="post">
+	<input id="ctx" type="hidden" value="${pageContext.request.contextPath}" />
+	<input id="server" type="hidden" value="${pageContext.request.serverName}" />
+	<input id="port" type="hidden" value="${pageContext.request.serverPort}" />
+	<input id="url" type="hidden" value="${linkTo[IndexController].index}" />
+
+	<!-- BEGIN HEADER -->
+	<div class="header navbar navbar-inverse navbar-fixed-top">
+		<!-- BEGIN TOP NAVIGATION BAR -->
+		<jsp:include page="/WEB-INF/jsp/common/top_nav_bar.jsp"/>
+		<!-- END TOP NAVIGATION BAR -->
+	</div>
+	<!-- END HEADER -->
+
+	<div class="clearfix"></div>
+
+	<!-- BEGIN CONTAINER -->
+	<div class="page-container">
+
+		<!-- BEGIN SIDEBAR -->
+		<m:menu funcionalidade="37"/>
+		<!-- END SIDEBAR -->
+		
+		<!-- BEGIN PAGE -->
+		<div class="page-content">
+			          
+			<!-- BEGIN PAGE HEADER-->
+			<div class="row">
+				<div class="col-md-12">
+					<!-- BEGIN PAGE TITLE & BREADCRUMB-->			
+					<h3 class="page-title">
+						Blindagem			<small>Consulta</small>
+			    </h3>
+					<ul class="page-breadcrumb breadcrumb">
+	
+						<li>
+							<i class="fa fa-home"></i>
+							<a href="${linkTo[IndexController].index}">Home</a> 
+							<i class="fa fa-angle-right"></i>
+						</li>
+						<li>
+							Cliente
+							<i class="fa fa-angle-right"></i>
+						</li>
+						<li>Blindagem</li>
+						
+			    </ul>
+					<!-- END PAGE TITLE & BREADCRUMB-->
+				</div>
+			</div>
+			<!-- END PAGE HEADER-->
+			<!-- BEGIN PAGE CONTENT-->
+			<div class="row">
+				<div class="col-md-12">
+					<!-- BEGIN EXAMPLE TABLE PORTLET-->
+					<div class="portlet box grey">
+						<div class="portlet-title">
+							<div class="caption"><i class="fa fa-reorder"></i>Lista de Blindagens</div>
+							<div class="tools">
+								<a href="javascript:;" class="collapse"></a>
+								<a href="javascript:;" class="remove"></a>
+							</div>
+						</div>
+						<div class="portlet-body">
+                        	<h4>Filtro</h4>
+                            <hr>
+                            	
+                            	<c:forEach var="error" items="${errors}">
+									<div class="alert alert-danger">
+										<button class="close" data-close="alert"></button>
+										<span>${error.message}</span>
+									</div>
+								</c:forEach>
+									
+								<c:if test="${mensagemSucesso != null}">
+									<div class="alert alert-success">
+										<button class="close" data-close="alert"></button>
+										<span>${mensagemSucesso}</span>
+									</div>
+								</c:if>
+								
+                            	<div class="form-group">
+									<label for="inputCliente" class="col-md-2 control-label" style="width:120px;">Cliente</label>
+									<div class="col-md-4">
+										<div class="input-icon">
+											<i class="fa fa-font"></i>
+											<input type="text" name="blindagem.veiculoE.clienteE.loginE.nmLogin" value="${blindagem.veiculoE.clienteE.loginE.nmLogin}" class="form-control" id="inputCliente" placeholder="Cliente">
+										</div>
+									</div>
+                                </div>
+                            	<div class="form-group">
+                                    <label for="inputTipo" class="col-md-2 control-label" style="width:120px;">Fabricante</label>
+									<div class="col-md-4">
+		
+							 			<select class="form-control select2me" data-placeholder="Todos" id="fabricanteBlindagem" name="blindagem.veiculoE.modeloE.fabricanteE.cdFabricante">
+                                           	<option value=""></option>
+							 				<c:forEach var="fabricante" items="${fabricanteList}">
+							 			 		<c:if test="${blindagem.veiculoE.modeloE.fabricanteE.cdFabricante == fabricante.cdFabricante}">
+								 					<option value="${fabricante.cdFabricante}" selected="selected">${fabricante.nmFabricante}</option>
+								 			 	</c:if>
+								 			 	<c:if test="${blindagem.veiculoE.modeloE.fabricanteE.cdFabricante != fabricante.cdFabricante}">
+								 			 		<option value="${fabricante.cdFabricante}">${fabricante.nmFabricante}</option>
+								 			 	</c:if>
+								 			</c:forEach>
+										</select>
+									
+									</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputTipo" class="col-md-2 control-label" style="width:120px;">Modelo</label>
+									<div class="col-md-4">
+		
+						 				<select class="form-control select2me" data-placeholder="Todos" id="modeloBlindagem" name="blindagem.veiculoE.modeloE.cdModelo">
+		                               		<option value=""></option>
+		                                   	<c:forEach var="modelo" items="${modeloList}">
+						 						<c:if test="${blindagem.veiculoE.modeloE.cdModelo == modelo.cdModelo}">
+						 				 			<option value="${modelo.cdModelo}" selected="selected">${modelo.nmModelo}</option>
+						 				 		</c:if>
+						 				 		<c:if test="${blindagem.veiculoE.modeloE.cdModelo != modelo.cdModelo}">
+						 				 			<option value="${modelo.cdModelo}">${modelo.nmModelo}</option>
+						 				 		</c:if>
+						 					</c:forEach>
+										</select>
+									
+									</div>
+                                </div>
+                               <div class="form-group">
+									<label for="inputChassi" class="col-md-2 control-label" style="width:120px;">CHASSI</label>
+									<div class="col-md-4">
+										<div class="input-icon">
+											<i class="fa fa-font"></i>
+											<input type="text" class="form-control" name="blindagem.veiculoE.nrChassi" value="${blindagem.veiculoE.nrChassi}" id="inputChassi" placeholder="CHASSI">
+										</div>
+									</div>
+                                </div>
+                                 <div class="form-group">
+									<label for="numeroOS" class="col-md-2 control-label" style="width:120px;">Núm. OS.</label>
+									<div class="col-md-4">
+										<div class="input-icon">
+											<i class="fa fa-font"></i>
+											<input type="text" id="numeroOS" class="form-control" 
+													name="blindagem.veiculoE.propostaContratoE.cdPropostaContrato" 
+													value="${blindagem.veiculoE.propostaContratoE.cdPropostaContrato}" 
+													onkeyup="somenteNumeros(this)" 
+													maxlength="12"
+													placeholder="Num OS" 
+													style="width:120px;">
+										</div>
+									</div>
+                                </div>
+                            
+                        	<hr>
+							<div class="table-toolbar">
+                            	<div class="btn-group">
+									<button id="btBuscar" class="btn default">
+										<i class="fa fa-search"></i> Buscar 
+									</button>
+                                </div>
+                                <div class="btn-group">
+                                    <button id="btLimpar" class="btn default">
+										<i class="fa fa-refresh"></i> Limpar
+									</button>
+								</div>
+								<div class="btn-group">
+                                    <button id="btVoltar" class="btn default">
+										<i class="fa fa-arrow-left"></i> Voltar
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- END EXAMPLE TABLE PORTLET-->
+					
+					<div class="row">
+						<div class="col-md-12">
+						
+						<div class="table-scrollable">
+						<table class="table table-striped table-bordered table-hover table-condensed" id="tbBlind">
+							<thead class="bg-red">
+								<tr>
+									<th>Cliente</th>
+									<th>Veículo </th>
+									<th width="80px">&nbsp;</th>
+									<th width="80px">&nbsp;</th>
+									<th width="50px">&nbsp;</th>
+								</tr>
+							</thead>
+							<tbody>
+								<c:set var="contador" value="0"/>
+								<c:forEach var="blindagem" items="${blindagemList}">
+									<tr class="odd gradeX">
+                                        <td>${blindagem.veiculoE.clienteE.loginE.nmLogin}</td>
+										<td>
+											Num. OS.: <b>${blindagem.veiculoE.propostaContratoE.cdPropostaContrato}</b><br>
+                                            Fab.: <b> ${blindagem.veiculoE.modeloE.fabricanteE.nmFabricante}</b><br>
+                                       		Mod.:  <b> ${blindagem.veiculoE.modeloE.nmModelo}</b><br>
+                                           	Chassi:  <b> ${blindagem.veiculoE.nrChassi}</b><br>
+                                   		</td>
+                                   		<td class="center">
+											 <c:if test="${blindagem.veiculoE.dtSaida != null}">
+												<a href="#"
+												class="btn default btn-sm"
+												onclick="imprimir(${blindagem.veiculoE.propostaContratoE.cdPropostaContrato});"><i
+													class="fa fa-print"></i> Declaração</a>
+											</c:if>
+										</td>
+										<td class="center">
+											 <c:if test="${blindagem.veiculoE.dtSaida != null}">
+												<a href="#"
+												class="btn default btn-sm"
+												onclick="imprimirTermo(${blindagem.veiculoE.propostaContratoE.cdPropostaContrato});"><i
+													class="fa fa-print"></i> Termo Resp.</a>
+											</c:if>
+										</td>
+										<td class="center"><a  href="detalhar?id=${blindagem.cdBlindagem}" class="btn default btn-sm" onclick="javascript: App.blockUI({boxed: true});"><i class="fa fa-pencil"></i> Editar</a>
+                                        </td>
+									</tr>
+									<c:set var="contador" value="${contador + 1}"/>
+								</c:forEach>
+							</tbody>
+						</table>
+						</div>
+						
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+			<!-- END PAGE CONTENT-->
+	</div>
+	<!-- END PAGE -->
+	<!-- END CONTAINER -->
+	<!-- BEGIN FOOTER -->
+	<!-- END CONTAINER -->
+	<jsp:include page="/WEB-INF/jsp/common/footer.jsp" />
+
+		<script type="text/javascript"
+			src="${pageContext.request.contextPath}/assets/plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+		<script type="text/javascript"
+			src="${pageContext.request.contextPath}/assets/scripts/script.js"></script>
+		<script type="text/javascript"
+			src="${pageContext.request.contextPath}/assets/scripts/blindagem_consulta.js"></script>
+		<script type="text/javascript"
+			src="${pageContext.request.contextPath}/assets/plugins/bootstrap-select/bootstrap-select.min.js"></script>
+		<script type="text/javascript"
+			src="${pageContext.request.contextPath}/assets/plugins/select2/select2.min.js"></script>
+		<script type="text/javascript"
+			src="${pageContext.request.contextPath}/assets/plugins/jquery-multi-select/js/jquery.multi-select.js"></script>
+
+		<script type="text/javascript" src="${pageContext.request.contextPath}/assets/plugins/data-tables/jquery.dataTables.js"></script>
+		<script type="text/javascript" src="${pageContext.request.contextPath}/assets/plugins/data-tables/DT_bootstrap.js"></script>
+		<script type="text/javascript" src="${pageContext.request.contextPath}/assets/scripts/custom/table-managed.js"></script>
+
+		<script>
+		jQuery(document).ready(function() {
+			// initiate layout and plugins
+			App.init();
+			Blindagem.init();
+			Paginacao.init();
+		});
+	</script>
+	<!-- END JAVASCRIPTS -->
+	
+	 </form>
+</body>
+<!-- END BODY -->
+</html>
