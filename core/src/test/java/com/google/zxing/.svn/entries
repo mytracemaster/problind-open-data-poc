@@ -1,0 +1,98 @@
+10
+
+dir
+0
+https://frambos.codespaces.com/svn/problind-mobi/trunk/core/src/test/java/com/google/zxing
+https://frambos.codespaces.com/svn/problind-mobi
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6df41c30-04c1-4550-9365-8d7da2afcd1f
+
+BufferedImageLuminanceSource.java
+file
+
+
+
+add
+
+negative
+dir
+
+
+
+add
+
+oned
+dir
+
+
+
+add
+
+pdf417
+dir
+
+
+
+add
+
+aztec
+dir
+
+
+
+add
+
+AllPositiveBlackBoxTester.java
+file
+
+
+
+add
+
+common
+dir
+
+
+
+add
+
+qrcode
+dir
+
+
+
+add
+
+client
+dir
+
+
+
+add
+
+datamatrix
+dir
+
+
+
+add
+

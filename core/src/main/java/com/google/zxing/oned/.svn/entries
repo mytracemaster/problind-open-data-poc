@@ -1,0 +1,217 @@
+10
+
+dir
+0
+https://frambos.codespaces.com/svn/problind-mobi/trunk/core/src/main/java/com/google/zxing/oned
+https://frambos.codespaces.com/svn/problind-mobi
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6df41c30-04c1-4550-9365-8d7da2afcd1f
+
+Code128Writer.java
+file
+
+
+
+add
+
+EAN13Writer.java
+file
+
+
+
+add
+
+ITFReader.java
+file
+
+
+
+add
+
+UPCEANExtensionSupport.java
+file
+
+
+
+add
+
+OneDReader.java
+file
+
+
+
+add
+
+UPCEANWriter.java
+file
+
+
+
+add
+
+Code93Reader.java
+file
+
+
+
+add
+
+Code39Reader.java
+file
+
+
+
+add
+
+UPCAReader.java
+file
+
+
+
+add
+
+EAN8Reader.java
+file
+
+
+
+add
+
+CodaBarReader.java
+file
+
+
+
+add
+
+ITFWriter.java
+file
+
+
+
+add
+
+UPCEReader.java
+file
+
+
+
+add
+
+MultiFormatUPCEANReader.java
+file
+
+
+
+add
+
+Code39Writer.java
+file
+
+
+
+add
+
+EANManufacturerOrgSupport.java
+file
+
+
+
+add
+
+UPCAWriter.java
+file
+
+
+
+add
+
+rss
+dir
+
+
+
+add
+
+UPCEANExtension2Support.java
+file
+
+
+
+add
+
+EAN8Writer.java
+file
+
+
+
+add
+
+Code128Reader.java
+file
+
+
+
+add
+
+CodaBarWriter.java
+file
+
+
+
+add
+
+EAN13Reader.java
+file
+
+
+
+add
+
+UPCEANExtension5Support.java
+file
+
+
+
+add
+
+MultiFormatOneDReader.java
+file
+
+
+
+add
+
+OneDimensionalCodeWriter.java
+file
+
+
+
+add
+
+UPCEANReader.java
+file
+
+
+
+add
+

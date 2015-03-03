@@ -1,0 +1,70 @@
+10
+
+dir
+0
+https://frambos.codespaces.com/svn/problind-mobi/trunk/core/src/test/java/com/google/zxing/qrcode/decoder
+https://frambos.codespaces.com/svn/problind-mobi
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6df41c30-04c1-4550-9365-8d7da2afcd1f
+
+ModeTestCase.java
+file
+
+
+
+add
+
+DataMaskTestCase.java
+file
+
+
+
+add
+
+VersionTestCase.java
+file
+
+
+
+add
+
+ErrorCorrectionLevelTestCase.java
+file
+
+
+
+add
+
+FormatInformationTestCase.java
+file
+
+
+
+add
+
+DecodedBitStreamParserTestCase.java
+file
+
+
+
+add
+

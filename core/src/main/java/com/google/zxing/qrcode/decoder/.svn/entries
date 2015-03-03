@@ -1,0 +1,98 @@
+10
+
+dir
+0
+https://frambos.codespaces.com/svn/problind-mobi/trunk/core/src/main/java/com/google/zxing/qrcode/decoder
+https://frambos.codespaces.com/svn/problind-mobi
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6df41c30-04c1-4550-9365-8d7da2afcd1f
+
+DecodedBitStreamParser.java
+file
+
+
+
+add
+
+BitMatrixParser.java
+file
+
+
+
+add
+
+DataBlock.java
+file
+
+
+
+add
+
+Mode.java
+file
+
+
+
+add
+
+QRCodeDecoderMetaData.java
+file
+
+
+
+add
+
+DataMask.java
+file
+
+
+
+add
+
+Decoder.java
+file
+
+
+
+add
+
+Version.java
+file
+
+
+
+add
+
+ErrorCorrectionLevel.java
+file
+
+
+
+add
+
+FormatInformation.java
+file
+
+
+
+add
+

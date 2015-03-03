@@ -1,0 +1,112 @@
+10
+
+dir
+0
+https://frambos.codespaces.com/svn/problind-mobi/trunk/core/src/test/java/com/google/zxing/client/result
+https://frambos.codespaces.com/svn/problind-mobi
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6df41c30-04c1-4550-9365-8d7da2afcd1f
+
+CalendarParsedResultTestCase.java
+file
+
+
+
+add
+
+ExpandedProductParsedResultTestCase.java
+file
+
+
+
+add
+
+GeoParsedResultTestCase.java
+file
+
+
+
+add
+
+ISBNParsedResultTestCase.java
+file
+
+
+
+add
+
+EmailAddressParsedResultTestCase.java
+file
+
+
+
+add
+
+WifiParsedResultTestCase.java
+file
+
+
+
+add
+
+SMSMMSParsedResultTestCase.java
+file
+
+
+
+add
+
+URIParsedResultTestCase.java
+file
+
+
+
+add
+
+AddressBookParsedResultTestCase.java
+file
+
+
+
+add
+
+ProductParsedResultTestCase.java
+file
+
+
+
+add
+
+ParsedReaderResultTestCase.java
+file
+
+
+
+add
+
+TelParsedResultTestCase.java
+file
+
+
+
+add
+

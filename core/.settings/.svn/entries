@@ -1,0 +1,63 @@
+10
+
+dir
+0
+https://frambos.codespaces.com/svn/problind-mobi/trunk/core/.settings
+https://frambos.codespaces.com/svn/problind-mobi
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6df41c30-04c1-4550-9365-8d7da2afcd1f
+
+org.eclipse.jdt.core.prefs
+file
+
+
+
+add
+
+org.eclipse.m2e.core.prefs
+file
+
+
+
+add
+
+org.eclipse.core.resources.prefs
+file
+
+
+
+add
+
+org.eclipse.wst.common.project.facet.core.xml
+file
+
+
+
+add
+
+org.eclipse.wst.common.component
+file
+
+
+
+add
+

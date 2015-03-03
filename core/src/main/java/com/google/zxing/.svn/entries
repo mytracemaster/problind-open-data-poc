@@ -1,0 +1,252 @@
+10
+
+dir
+0
+https://frambos.codespaces.com/svn/problind-mobi/trunk/core/src/main/java/com/google/zxing
+https://frambos.codespaces.com/svn/problind-mobi
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6df41c30-04c1-4550-9365-8d7da2afcd1f
+
+MultiFormatWriter.java
+file
+
+
+
+add
+
+Reader.java
+file
+
+
+
+add
+
+ResultPointCallback.java
+file
+
+
+
+add
+
+DecodeHintType.java
+file
+
+
+
+add
+
+maxicode
+dir
+
+
+
+add
+
+multi
+dir
+
+
+
+add
+
+Writer.java
+file
+
+
+
+add
+
+Result.java
+file
+
+
+
+add
+
+ResultMetadataType.java
+file
+
+
+
+add
+
+ChecksumException.java
+file
+
+
+
+add
+
+RGBLuminanceSource.java
+file
+
+
+
+add
+
+ResultPoint.java
+file
+
+
+
+add
+
+LuminanceSource.java
+file
+
+
+
+add
+
+InvertedLuminanceSource.java
+file
+
+
+
+add
+
+PlanarYUVLuminanceSource.java
+file
+
+
+
+add
+
+oned
+dir
+
+
+
+add
+
+FormatException.java
+file
+
+
+
+add
+
+BarcodeFormat.java
+file
+
+
+
+add
+
+common
+dir
+
+
+
+add
+
+NotFoundException.java
+file
+
+
+
+add
+
+datamatrix
+dir
+
+
+
+add
+
+ReaderException.java
+file
+
+
+
+add
+
+BinaryBitmap.java
+file
+
+
+
+add
+
+EncodeHintType.java
+file
+
+
+
+add
+
+pdf417
+dir
+
+
+
+add
+
+Binarizer.java
+file
+
+
+
+add
+
+Dimension.java
+file
+
+
+
+add
+
+MultiFormatReader.java
+file
+
+
+
+add
+
+aztec
+dir
+
+
+
+add
+
+WriterException.java
+file
+
+
+
+add
+
+qrcode
+dir
+
+
+
+add
+
+client
+dir
+
+
+
+add
+

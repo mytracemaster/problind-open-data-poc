@@ -1,0 +1,77 @@
+10
+
+dir
+0
+https://frambos.codespaces.com/svn/problind-mobi/trunk/core/src/main/java/com/google/zxing/oned/rss
+https://frambos.codespaces.com/svn/problind-mobi
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6df41c30-04c1-4550-9365-8d7da2afcd1f
+
+RSS14Reader.java
+file
+
+
+
+add
+
+FinderPattern.java
+file
+
+
+
+add
+
+DataCharacter.java
+file
+
+
+
+add
+
+expanded
+dir
+
+
+
+add
+
+RSSUtils.java
+file
+
+
+
+add
+
+Pair.java
+file
+
+
+
+add
+
+AbstractRSSReader.java
+file
+
+
+
+add
+

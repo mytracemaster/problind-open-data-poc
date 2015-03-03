@@ -1,0 +1,70 @@
+10
+
+dir
+0
+https://frambos.codespaces.com/svn/problind-mobi/trunk/core
+https://frambos.codespaces.com/svn/problind-mobi
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6df41c30-04c1-4550-9365-8d7da2afcd1f
+
+.classpath
+file
+
+
+
+add
+
+.project
+file
+
+
+
+add
+
+target
+dir
+
+
+
+add
+
+src
+dir
+
+
+
+add
+
+pom.xml
+file
+
+
+
+add
+
+.settings
+dir
+
+
+
+add
+

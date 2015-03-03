@@ -1,0 +1,252 @@
+10
+
+dir
+0
+https://frambos.codespaces.com/svn/problind-mobi/trunk/core/src/test/java/com/google/zxing/oned
+https://frambos.codespaces.com/svn/problind-mobi
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6df41c30-04c1-4550-9365-8d7da2afcd1f
+
+EAN13WriterTestCase.java
+file
+
+
+
+add
+
+ITFBlackBox2TestCase.java
+file
+
+
+
+add
+
+UPCABlackBox2TestCase.java
+file
+
+
+
+add
+
+UPCABlackBox4TestCase.java
+file
+
+
+
+add
+
+CodabarBlackBox1TestCase.java
+file
+
+
+
+add
+
+UPCEBlackBox2TestCase.java
+file
+
+
+
+add
+
+UPCAWriterTestCase.java
+file
+
+
+
+add
+
+Code128BlackBox1TestCase.java
+file
+
+
+
+add
+
+Code128BlackBox3TestCase.java
+file
+
+
+
+add
+
+EAN13BlackBox2TestCase.java
+file
+
+
+
+add
+
+EAN13BlackBox4TestCase.java
+file
+
+
+
+add
+
+EAN13BlackBox5BlurryTestCase.java
+file
+
+
+
+add
+
+ITFBlackBox1TestCase.java
+file
+
+
+
+add
+
+Code39BlackBox1TestCase.java
+file
+
+
+
+add
+
+Code93BlackBox1TestCase.java
+file
+
+
+
+add
+
+UPCABlackBox1TestCase.java
+file
+
+
+
+add
+
+Code39BlackBox3TestCase.java
+file
+
+
+
+add
+
+EAN8BlackBox1TestCase.java
+file
+
+
+
+add
+
+UPCEBlackBox1TestCase.java
+file
+
+
+
+add
+
+UPCABlackBox5TestCase.java
+file
+
+
+
+add
+
+UPCABlackBox6BlurryTestCase.java
+file
+
+
+
+add
+
+EAN8WriterTestCase.java
+file
+
+
+
+add
+
+CodaBarWriterTestCase.java
+file
+
+
+
+add
+
+EANManufacturerOrgSupportTest.java
+file
+
+
+
+add
+
+UPCABlackBox3ReflectiveTestCase.java
+file
+
+
+
+add
+
+rss
+dir
+
+
+
+add
+
+Code128BlackBox2TestCase.java
+file
+
+
+
+add
+
+EAN13BlackBox1TestCase.java
+file
+
+
+
+add
+
+UPCEBlackBox3ReflectiveTestCase.java
+file
+
+
+
+add
+
+UPCEANExtensionBlackBox1TestCase.java
+file
+
+
+
+add
+
+Code39ExtendedBlackBox2TestCase.java
+file
+
+
+
+add
+
+EAN13BlackBox3TestCase.java
+file
+
+
+
+add
+

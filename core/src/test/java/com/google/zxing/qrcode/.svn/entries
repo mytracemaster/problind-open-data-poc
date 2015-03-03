@@ -1,0 +1,91 @@
+10
+
+dir
+0
+https://frambos.codespaces.com/svn/problind-mobi/trunk/core/src/test/java/com/google/zxing/qrcode
+https://frambos.codespaces.com/svn/problind-mobi
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6df41c30-04c1-4550-9365-8d7da2afcd1f
+
+encoder
+dir
+
+
+
+add
+
+QRCodeBlackBox1TestCase.java
+file
+
+
+
+add
+
+QRCodeBlackBox2TestCase.java
+file
+
+
+
+add
+
+QRCodeBlackBox3TestCase.java
+file
+
+
+
+add
+
+QRCodeBlackBox4TestCase.java
+file
+
+
+
+add
+
+QRCodeBlackBox5TestCase.java
+file
+
+
+
+add
+
+decoder
+dir
+
+
+
+add
+
+QRCodeBlackBox6TestCase.java
+file
+
+
+
+add
+
+QRCodeWriterTestCase.java
+file
+
+
+
+add
+

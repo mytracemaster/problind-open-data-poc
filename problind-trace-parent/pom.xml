@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.mytrace.problind</groupId>
+	<artifactId>problind-trace-parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>Problind TRACE</name>
+	<description>Portal de rastreio de dados de blindagem das blindadoras clientes do Problind</description>
+	<url>http://www.problind.com.br</url>
+
+	<organization>
+		<name>Mytrace Tecnologia</name>
+		<url>http://www.mytrace.com.br</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<id>dinterliche</id>
+			<name>Daniel Interliche</name>
+			<email>daniel.interliche@gmail.com</email>
+		</developer>
+	</developers>
+
+	<properties>
+		<spring.version>4.0.1.RELEASE</spring.version>
+		<log4j.version>1.2.17</log4j.version>
+	</properties>
+
+	<modules>
+		<module>../problind-trace-model</module>
+		<module>../problind-trace-core</module>
+		<module>../problind-trace-service</module>
+		<module>../problind-trace-web</module>
+	</modules>
+
+</project>

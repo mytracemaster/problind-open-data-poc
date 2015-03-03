@@ -1,0 +1,77 @@
+10
+
+dir
+0
+https://frambos.codespaces.com/svn/problind-mobi/trunk/core/src/main/java/com/google/zxing/pdf417
+https://frambos.codespaces.com/svn/problind-mobi
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6df41c30-04c1-4550-9365-8d7da2afcd1f
+
+encoder
+dir
+
+
+
+add
+
+PDF417Writer.java
+file
+
+
+
+add
+
+decoder
+dir
+
+
+
+add
+
+PDF417ResultMetadata.java
+file
+
+
+
+add
+
+PDF417Reader.java
+file
+
+
+
+add
+
+detector
+dir
+
+
+
+add
+
+PDF417Common.java
+file
+
+
+
+add
+

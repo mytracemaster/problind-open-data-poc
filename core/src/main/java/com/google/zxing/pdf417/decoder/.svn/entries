@@ -1,0 +1,105 @@
+10
+
+dir
+0
+https://frambos.codespaces.com/svn/problind-mobi/trunk/core/src/main/java/com/google/zxing/pdf417/decoder
+https://frambos.codespaces.com/svn/problind-mobi
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6df41c30-04c1-4550-9365-8d7da2afcd1f
+
+DecodedBitStreamParser.java
+file
+
+
+
+add
+
+BarcodeMetadata.java
+file
+
+
+
+add
+
+DetectionResultRowIndicatorColumn.java
+file
+
+
+
+add
+
+PDF417CodewordDecoder.java
+file
+
+
+
+add
+
+Codeword.java
+file
+
+
+
+add
+
+ec
+dir
+
+
+
+add
+
+DetectionResultColumn.java
+file
+
+
+
+add
+
+BarcodeValue.java
+file
+
+
+
+add
+
+PDF417ScanningDecoder.java
+file
+
+
+
+add
+
+DetectionResult.java
+file
+
+
+
+add
+
+BoundingBox.java
+file
+
+
+
+add
+

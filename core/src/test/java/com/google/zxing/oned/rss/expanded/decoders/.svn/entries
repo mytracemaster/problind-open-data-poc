@@ -1,0 +1,70 @@
+10
+
+dir
+0
+https://frambos.codespaces.com/svn/problind-mobi/trunk/core/src/test/java/com/google/zxing/oned/rss/expanded/decoders
+https://frambos.codespaces.com/svn/problind-mobi
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6df41c30-04c1-4550-9365-8d7da2afcd1f
+
+FieldParserTest.java
+file
+
+
+
+add
+
+AI01_3103_DecoderTest.java
+file
+
+
+
+add
+
+AnyAIDecoderTest.java
+file
+
+
+
+add
+
+AbstractDecoderTest.java
+file
+
+
+
+add
+
+AI01_3X0X_1X_DecoderTest.java
+file
+
+
+
+add
+
+AI01_3202_3203_DecoderTest.java
+file
+
+
+
+add
+

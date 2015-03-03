@@ -1,0 +1,77 @@
+10
+
+dir
+0
+https://frambos.codespaces.com/svn/problind-mobi/trunk/core/src/main/java/com/google/zxing/aztec/encoder
+https://frambos.codespaces.com/svn/problind-mobi
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6df41c30-04c1-4550-9365-8d7da2afcd1f
+
+Encoder.java
+file
+
+
+
+add
+
+State.java
+file
+
+
+
+add
+
+Token.java
+file
+
+
+
+add
+
+AztecCode.java
+file
+
+
+
+add
+
+BinaryShiftToken.java
+file
+
+
+
+add
+
+HighLevelEncoder.java
+file
+
+
+
+add
+
+SimpleToken.java
+file
+
+
+
+add
+

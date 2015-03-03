@@ -1,0 +1,63 @@
+10
+
+dir
+0
+https://frambos.codespaces.com/svn/problind-mobi/trunk/core/src/test/java/com/google/zxing/datamatrix/encoder
+https://frambos.codespaces.com/svn/problind-mobi
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6df41c30-04c1-4550-9365-8d7da2afcd1f
+
+DebugPlacement.java
+file
+
+
+
+add
+
+HighLevelEncodeTestCase.java
+file
+
+
+
+add
+
+PlacementTestCase.java
+file
+
+
+
+add
+
+ErrorCorrectionTestCase.java
+file
+
+
+
+add
+
+SymbolInfoTestCase.java
+file
+
+
+
+add
+

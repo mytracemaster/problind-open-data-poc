@@ -1,0 +1,126 @@
+10
+
+dir
+0
+https://frambos.codespaces.com/svn/problind-mobi/trunk/core/src/main/java/com/google/zxing/datamatrix/encoder
+https://frambos.codespaces.com/svn/problind-mobi
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6df41c30-04c1-4550-9365-8d7da2afcd1f
+
+EdifactEncoder.java
+file
+
+
+
+add
+
+Encoder.java
+file
+
+
+
+add
+
+ErrorCorrection.java
+file
+
+
+
+add
+
+SymbolInfo.java
+file
+
+
+
+add
+
+EncoderContext.java
+file
+
+
+
+add
+
+TextEncoder.java
+file
+
+
+
+add
+
+C40Encoder.java
+file
+
+
+
+add
+
+Base256Encoder.java
+file
+
+
+
+add
+
+HighLevelEncoder.java
+file
+
+
+
+add
+
+ASCIIEncoder.java
+file
+
+
+
+add
+
+DataMatrixSymbolInfo144.java
+file
+
+
+
+add
+
+SymbolShapeHint.java
+file
+
+
+
+add
+
+X12Encoder.java
+file
+
+
+
+add
+
+DefaultPlacement.java
+file
+
+
+
+add
+

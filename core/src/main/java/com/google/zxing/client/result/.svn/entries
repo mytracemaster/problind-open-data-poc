@@ -1,0 +1,273 @@
+10
+
+dir
+0
+https://frambos.codespaces.com/svn/problind-mobi/trunk/core/src/main/java/com/google/zxing/client/result
+https://frambos.codespaces.com/svn/problind-mobi
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6df41c30-04c1-4550-9365-8d7da2afcd1f
+
+ExpandedProductResultParser.java
+file
+
+
+
+add
+
+ISBNResultParser.java
+file
+
+
+
+add
+
+CalendarParsedResult.java
+file
+
+
+
+add
+
+GeoParsedResult.java
+file
+
+
+
+add
+
+EmailAddressResultParser.java
+file
+
+
+
+add
+
+WifiResultParser.java
+file
+
+
+
+add
+
+ProductParsedResult.java
+file
+
+
+
+add
+
+ParsedResultType.java
+file
+
+
+
+add
+
+AbstractDoCoMoResultParser.java
+file
+
+
+
+add
+
+URLTOResultParser.java
+file
+
+
+
+add
+
+TelParsedResult.java
+file
+
+
+
+add
+
+VEventResultParser.java
+file
+
+
+
+add
+
+GeoResultParser.java
+file
+
+
+
+add
+
+BizcardResultParser.java
+file
+
+
+
+add
+
+ProductResultParser.java
+file
+
+
+
+add
+
+URIParsedResult.java
+file
+
+
+
+add
+
+AddressBookParsedResult.java
+file
+
+
+
+add
+
+SMTPResultParser.java
+file
+
+
+
+add
+
+TelResultParser.java
+file
+
+
+
+add
+
+SMSParsedResult.java
+file
+
+
+
+add
+
+SMSTOMMSTOResultParser.java
+file
+
+
+
+add
+
+AddressBookAUResultParser.java
+file
+
+
+
+add
+
+EmailDoCoMoResultParser.java
+file
+
+
+
+add
+
+URIResultParser.java
+file
+
+
+
+add
+
+VCardResultParser.java
+file
+
+
+
+add
+
+ParsedResult.java
+file
+
+
+
+add
+
+AddressBookDoCoMoResultParser.java
+file
+
+
+
+add
+
+TextParsedResult.java
+file
+
+
+
+add
+
+BookmarkDoCoMoResultParser.java
+file
+
+
+
+add
+
+ExpandedProductParsedResult.java
+file
+
+
+
+add
+
+ISBNParsedResult.java
+file
+
+
+
+add
+
+SMSMMSResultParser.java
+file
+
+
+
+add
+
+ResultParser.java
+file
+
+
+
+add
+
+EmailAddressParsedResult.java
+file
+
+
+
+add
+
+WifiParsedResult.java
+file
+
+
+
+add
+

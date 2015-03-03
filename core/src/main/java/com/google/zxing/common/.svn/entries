@@ -1,0 +1,126 @@
+10
+
+dir
+0
+https://frambos.codespaces.com/svn/problind-mobi/trunk/core/src/main/java/com/google/zxing/common
+https://frambos.codespaces.com/svn/problind-mobi
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6df41c30-04c1-4550-9365-8d7da2afcd1f
+
+BitSource.java
+file
+
+
+
+add
+
+BitMatrix.java
+file
+
+
+
+add
+
+DecoderResult.java
+file
+
+
+
+add
+
+GlobalHistogramBinarizer.java
+file
+
+
+
+add
+
+PerspectiveTransform.java
+file
+
+
+
+add
+
+reedsolomon
+dir
+
+
+
+add
+
+HybridBinarizer.java
+file
+
+
+
+add
+
+StringUtils.java
+file
+
+
+
+add
+
+DetectorResult.java
+file
+
+
+
+add
+
+CharacterSetECI.java
+file
+
+
+
+add
+
+detector
+dir
+
+
+
+add
+
+GridSampler.java
+file
+
+
+
+add
+
+BitArray.java
+file
+
+
+
+add
+
+DefaultGridSampler.java
+file
+
+
+
+add
+

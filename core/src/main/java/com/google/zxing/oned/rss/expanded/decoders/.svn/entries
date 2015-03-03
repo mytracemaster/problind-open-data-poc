@@ -1,0 +1,161 @@
+10
+
+dir
+0
+https://frambos.codespaces.com/svn/problind-mobi/trunk/core/src/main/java/com/google/zxing/oned/rss/expanded/decoders
+https://frambos.codespaces.com/svn/problind-mobi
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6df41c30-04c1-4550-9365-8d7da2afcd1f
+
+FieldParser.java
+file
+
+
+
+add
+
+AbstractExpandedDecoder.java
+file
+
+
+
+add
+
+AI013x0xDecoder.java
+file
+
+
+
+add
+
+AI01392xDecoder.java
+file
+
+
+
+add
+
+CurrentParsingState.java
+file
+
+
+
+add
+
+AI01393xDecoder.java
+file
+
+
+
+add
+
+DecodedNumeric.java
+file
+
+
+
+add
+
+AI01AndOtherAIs.java
+file
+
+
+
+add
+
+AI013x0x1xDecoder.java
+file
+
+
+
+add
+
+DecodedObject.java
+file
+
+
+
+add
+
+AI01decoder.java
+file
+
+
+
+add
+
+GeneralAppIdDecoder.java
+file
+
+
+
+add
+
+DecodedChar.java
+file
+
+
+
+add
+
+AnyAIDecoder.java
+file
+
+
+
+add
+
+AI013103decoder.java
+file
+
+
+
+add
+
+BlockParsedResult.java
+file
+
+
+
+add
+
+AI01weightDecoder.java
+file
+
+
+
+add
+
+DecodedInformation.java
+file
+
+
+
+add
+
+AI01320xDecoder.java
+file
+
+
+
+add
+
