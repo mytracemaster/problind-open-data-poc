@@ -141,18 +141,57 @@
 		<!-- BEGIN CONTENT -->
 		<div class="page-content-wrapper">
 			<div class="page-content">
-				<a href="#modalEvidencia" class="modal-evidencia" data-toggle="modal" id="linkModalEvidencia_17204">
+				<a id="modalEvidenciaLink" href="#modalEvidencia" class="modal-evidencia" data-toggle="modal" style="display:none"></a>
+				<!-- <a href="#modalEvidencia" class="modal-evidencia" data-toggle="modal" id="linkModalEvidencia_17204">
                		<button type="button" class="btn red" id="btEnviar_17204" style="margin-top:2px !important;"><i class="fa fa-search"></i> Ver Fotos</button>
-                </a>
-				
-				<div class="modal fade" id="modalEvidencia" tabindex="-1" role="dialog" aria-hidden="true">	    
-  					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-body" id="modal-evidencia-body">
+                </a> -->
+                
+                
+					<%-- <div id="modalEvidencia" style="background-color:#ffffff; padding:2%; z-index: 100; margin-left:20%; position: absolute; width: 50%;">
+						
+						<p align="right">
+							<button onClick="onModalClose();" type="button" class="btn default" data-dismiss="modal">Fechar</button>
+						</p>
+						
+						<p align="center">	
+							<img class="topArrow" onclick="onTopArrowClick();" style="display:none" src="${resourcesRoot}/assets/img/evidencia_up.png"/>
+						</p>
+							<div id="modal_imgs">
+								<img src="" class="imgproc1" id="img_proc1_1" style="border:1px solid #ccc;width:100%;height:300px; display:none"/>
+								<img src="" class="imgproc1" id="img_proc1_2" style="border:1px solid #ccc;width:100%;height:300px; display:none"/>
+								<img src="" class="imgproc1" id="img_proc1_3" style="border:1px solid #ccc;width:100%;height:300px; display:none"/>
 							</div>
+						<p align="center">	
+							<img class="downArrow" onclick="onDownArrowClick();" style="display:none" src="${resourcesRoot}/assets/img/evidencia_down.png"/>
+						</p>
+						
+					</div> --%>
+				
+				<div class="modal" id="modalEvidencia" style="none;">	    
+  				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body" id="modal-evidencia-body" style="width: auto; height: auto; max-height: 100%;">
+						
+						<p align="right">
+							<img id="btClose" data-dismiss="modal" src="${resourcesRoot}/assets/img/close.png"/>
+						</p>
+						
+						<p align="center">	
+							<img class="topArrow" onclick="onTopArrowClick();" style="display:none" src="${resourcesRoot}/assets/img/evidencia_up.png"/>
+						</p>
+							<div id="modal_imgs">
+								<img src="" class="imgproc1" id="img_proc1_1" style="border:1px solid #ccc;width:100%;height:300px; display:none"/>
+								<img src="" class="imgproc1" id="img_proc1_2" style="border:1px solid #ccc;width:100%;height:300px; display:none"/>
+								<img src="" class="imgproc1" id="img_proc1_3" style="border:1px solid #ccc;width:100%;height:300px; display:none"/>
+							</div>
+						<p align="center">	
+							<img class="downArrow" onclick="onDownArrowClick();" style="display:none" src="${resourcesRoot}/assets/img/evidencia_down.png"/>
+						</p>
+						
 						</div>
-					<!-- /.modal-content -->
 					</div>
+					<!-- /.modal-content -->
+				</div>
 				<!-- /.modal-dialog -->
 				</div>
 
@@ -405,6 +444,9 @@
 			<script src="${resourcesRoot}/assets/scripts/app.js"></script>
 			<script type="text/javascript" src="${resourcesRoot}/assets/scripts/android_bridge.js"></script>
 			<script>
+
+				var selectedImg = null;
+				var modalImgsCount = 0;
 				jQuery(document).ready(function() {
 					App.init();
 					AndroidBridge.init();
@@ -512,7 +554,17 @@
 									if(processo.evidencias != null){
 										htmlTimeline += "<tr>";
 										$.each(processo.evidencias, function(j, evidencia) {
-											htmlTimeline += "<td><img class=\"timeline-img pull-left\" src=\"data:image/png;base64, " + evidencia + "\"></td>";
+
+											var imgClass = "imgproc" + numProcesso;
+											var imgId = imgClass + "_" + j;
+
+											var onClickFunction = "onImgClick(\'" + imgId + "\', \'" + imgClass + "\');";
+
+											htmlTimeline += "<td>";
+											/* htmlTimeline += "<a href=\"#modalEvidencia\" class=\"modal-evidencia\" data-toggle=\"modal\" id=\"linkModalEvidencia_17204\">"; */
+											htmlTimeline +=	"<img class=\"timeline-img pull-left " + imgClass + "\" id= \"" + imgId + "\" onclick=\"" + onClickFunction + "\" src=\"data:image/png;base64, " + evidencia + "\">";
+											/* htmlTimeline += "</a>"; */
+											htmlTimeline += "</td>";
 										});
 										htmlTimeline += "</tr>";
 									}
@@ -527,8 +579,8 @@
 								});
 							}
 						} 
-						
 					});
+
 				});
 
 				function teste1(){
@@ -537,7 +589,7 @@
 					$.ajax({ 
 						url: postUrl, 
 						type: 'POST', 
-						data: "codLeitura=concept|140205",
+						data: "codLeitura=concept|140719",
 						dataType: 'JSON',
 						cache: false,
 					}).done(function(data, textStatus, jqXHR) {
@@ -603,7 +655,7 @@
 					$.ajax({ 
 						url: postUrl, 
 						type: 'POST', 
-						data: "codLeitura=concept|140205",
+						data: "codLeitura=concept|140719",
 						dataType: 'JSON',
 						cache: false,
 						beforeSend:function(){
@@ -641,7 +693,17 @@
 									if(processo.evidencias != null){
 										htmlTimeline += "<tr>";
 										$.each(processo.evidencias, function(j, evidencia) {
-											htmlTimeline += "<td><img class=\"timeline-img pull-left\" src=\"data:image/png;base64, " + evidencia + "\"></td>";
+
+											var imgClass = "imgproc" + numProcesso;
+											var imgId = imgClass + "_" + j;
+
+											var onClickFunction = "onImgClick(\'" + imgId + "\', \'" + imgClass + "\');";
+
+											htmlTimeline += "<td>";
+											/* htmlTimeline += "<a href=\"#modalEvidencia\" class=\"modal-evidencia\" data-toggle=\"modal\" id=\"linkModalEvidencia_17204\">"; */
+											htmlTimeline +=	"<img class=\"timeline-img pull-left " + imgClass + "\" id= \"" + imgId + "\" onclick=\"" + onClickFunction + "\" src=\"data:image/png;base64, " + evidencia + "\">";
+											/* htmlTimeline += "</a>"; */
+											htmlTimeline += "</td>";
 										});
 										htmlTimeline += "</tr>";
 									}
@@ -654,8 +716,6 @@
 
 									$("#processos ul").append(htmlTimeline);							
 								});
-
-								
 							}
 						} 
 						
@@ -664,6 +724,86 @@
 					}); 
 				}
 
+				function onImgClick(timeLineId, imgClass){
+					$("#modal_imgs").html("");
+
+					/* $("#modalEvidencia").show(); */
+					$("#modalEvidenciaLink").click();
+					modalImgsCount = 0;
+					$.each($("." + imgClass), function(i, img){
+						modalImgsCount++;
+						var timelineImg = $(img);
+
+						var modalId = "modal_" + i;
+						var modalImg = null;
+						if(timelineImg.attr("id") == timeLineId){
+							selectedImg = i;
+
+							modalImg = "<img src=\"" + timelineImg.attr("src") + "\"  id=\"" + modalId + "\" style=\"border:1px solid #ccc;width:100%;height:300px;\"/>";
+						}else{
+							modalImg = "<img src=\"" + timelineImg.attr("src") + "\"  id=\"" + modalId + "\" style=\"border:1px solid #ccc;width:100%;height:300px; display:none\"/>";
+						}
+						$("#modal_imgs").append(modalImg);
+					});
+
+					if(modalImgsCount == 0 || modalImgsCount == 1){
+						$(".topArrow").hide();
+						$(".downArrow").hide();
+					} else if( modalImgsCount > 1 && selectedImg == 0){
+						$(".topArrow").show();
+						$(".downArrow").hide();
+					} else if( modalImgsCount > 1 && selectedImg < modalImgsCount - 1){
+						$(".topArrow").show();
+						$(".downArrow").show();
+					} else if( modalImgsCount > 1 && selectedImg == modalImgsCount - 1){
+						$(".topArrow").hide();
+						$(".downArrow").show();
+					}  
+				}
+
+				function onDownArrowClick(){
+					$("#modal_" + selectedImg).hide();
+					
+					selectedImg--;
+					
+					if(selectedImg <= 0){
+						selectedImg = 0;
+						$(".downArrow").hide();
+						if(modalImgsCount > 1){
+							$(".topArrow").show();
+						}else{
+							$(".topArrow").hide();
+						}
+					}else{
+						$(".topArrow").show();
+						$(".downArrow").show();
+					}
+
+					$("#modal_" + selectedImg).show();
+				}
+
+				function onTopArrowClick(){
+					$("#modal_" + selectedImg).hide();
+					
+					selectedImg++;
+					
+					if(selectedImg >= modalImgsCount -1){
+						selectedImg = modalImgsCount - 1;
+						$(".topArrow").hide();
+						if(modalImgsCount > 1){
+							$(".downArrow").show();
+						}
+					}else{
+						$(".topArrow").show();
+						$(".downArrow").show();
+					}
+
+					$("#modal_" + selectedImg).show();
+				}
+
+				function onModalClose(){
+					$('#modalEvidencia').hide();
+				}
 			</script>
 			<!-- END JAVASCRIPTS -->
 </body>
