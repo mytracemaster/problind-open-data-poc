@@ -33,8 +33,7 @@ public class WebProviderActivity extends Activity {
 	public static final String CODE_WEB_PARAM = "codigo";
 
 	private static final String PROBLIND_TRACE_URL = "http://web-problindtrace.rhcloud.com/carregar";
-	// private static final String PROBLIND_TRACE_URL =
-	// "http://192.168.0.28:8080/problind-trace-web/carregar";
+//	private static final String PROBLIND_TRACE_URL = "http://192.168.0.4:8080/problind-trace-web/carregar";
 
 	private final String TAG = WebProviderActivity.class.toString();
 	private WebView webView;
