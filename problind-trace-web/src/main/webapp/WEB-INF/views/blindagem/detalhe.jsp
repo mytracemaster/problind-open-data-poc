@@ -142,30 +142,6 @@
 		<div class="page-content-wrapper">
 			<div class="page-content">
 				<a id="modalEvidenciaLink" href="#modalEvidencia" class="modal-evidencia" data-toggle="modal" style="display:none"></a>
-				<!-- <a href="#modalEvidencia" class="modal-evidencia" data-toggle="modal" id="linkModalEvidencia_17204">
-               		<button type="button" class="btn red" id="btEnviar_17204" style="margin-top:2px !important;"><i class="fa fa-search"></i> Ver Fotos</button>
-                </a> -->
-                
-                
-					<%-- <div id="modalEvidencia" style="background-color:#ffffff; padding:2%; z-index: 100; margin-left:20%; position: absolute; width: 50%;">
-						
-						<p align="right">
-							<button onClick="onModalClose();" type="button" class="btn default" data-dismiss="modal">Fechar</button>
-						</p>
-						
-						<p align="center">	
-							<img class="topArrow" onclick="onTopArrowClick();" style="display:none" src="${resourcesRoot}/assets/img/evidencia_up.png"/>
-						</p>
-							<div id="modal_imgs">
-								<img src="" class="imgproc1" id="img_proc1_1" style="border:1px solid #ccc;width:100%;height:300px; display:none"/>
-								<img src="" class="imgproc1" id="img_proc1_2" style="border:1px solid #ccc;width:100%;height:300px; display:none"/>
-								<img src="" class="imgproc1" id="img_proc1_3" style="border:1px solid #ccc;width:100%;height:300px; display:none"/>
-							</div>
-						<p align="center">	
-							<img class="downArrow" onclick="onDownArrowClick();" style="display:none" src="${resourcesRoot}/assets/img/evidencia_down.png"/>
-						</p>
-						
-					</div> --%>
 				
 				<div class="modal" id="modalEvidencia" style="none;">	    
   				<div class="modal-dialog">
@@ -175,18 +151,11 @@
 						<p align="right">
 							<img id="btClose" data-dismiss="modal" src="${resourcesRoot}/assets/img/close.png"/>
 						</p>
-						
-						<p align="center">	
-							<img class="topArrow" onclick="onTopArrowClick();" style="display:none" src="${resourcesRoot}/assets/img/evidencia_up.png"/>
-						</p>
-							<div id="modal_imgs">
-								<img src="" class="imgproc1" id="img_proc1_1" style="border:1px solid #ccc;width:100%;height:300px; display:none"/>
-								<img src="" class="imgproc1" id="img_proc1_2" style="border:1px solid #ccc;width:100%;height:300px; display:none"/>
-								<img src="" class="imgproc1" id="img_proc1_3" style="border:1px solid #ccc;width:100%;height:300px; display:none"/>
-							</div>
-						<p align="center">	
-							<img class="downArrow" onclick="onDownArrowClick();" style="display:none" src="${resourcesRoot}/assets/img/evidencia_down.png"/>
-						</p>
+						<div id="modal_imgs">
+							<img src="" class="imgproc1" id="img_proc1_1" style="border:1px solid #ccc;height:300px; display:none"/>
+							<img src="" class="imgproc1" id="img_proc1_2" style="border:1px solid #ccc;height:300px; display:none"/>
+							<img src="" class="imgproc1" id="img_proc1_3" style="border:1px solid #ccc;height:300px; display:none"/>
+						</div>
 						
 						</div>
 					</div>
@@ -727,6 +696,9 @@
 				function onImgClick(timeLineId, imgClass){
 					$("#modal_imgs").html("");
 
+					var btLeft = "<img class=\"topArrow\" onclick=\"onDownArrowClick();\" style=\"width:5%; display:none\" src=\"${resourcesRoot}/assets/img/left.png\"/>";
+					$("#modal_imgs").append(btLeft);
+					
 					/* $("#modalEvidencia").show(); */
 					$("#modalEvidenciaLink").click();
 					modalImgsCount = 0;
@@ -739,26 +711,18 @@
 						if(timelineImg.attr("id") == timeLineId){
 							selectedImg = i;
 
-							modalImg = "<img src=\"" + timelineImg.attr("src") + "\"  id=\"" + modalId + "\" style=\"border:1px solid #ccc;width:100%;height:300px;\"/>";
+							modalImg = "<img src=\"" + timelineImg.attr("src") + "\"  id=\"" + modalId + "\" style=\"border:1px solid #ccc;width:90%;height:300px;\"/>";
 						}else{
-							modalImg = "<img src=\"" + timelineImg.attr("src") + "\"  id=\"" + modalId + "\" style=\"border:1px solid #ccc;width:100%;height:300px; display:none\"/>";
+							modalImg = "<img src=\"" + timelineImg.attr("src") + "\"  id=\"" + modalId + "\" style=\"border:1px solid #ccc;width:90%;height:300px; display:none\"/>";
 						}
 						$("#modal_imgs").append(modalImg);
 					});
 
-					if(modalImgsCount == 0 || modalImgsCount == 1){
-						$(".topArrow").hide();
-						$(".downArrow").hide();
-					} else if( modalImgsCount > 1 && selectedImg == 0){
-						$(".topArrow").show();
-						$(".downArrow").hide();
-					} else if( modalImgsCount > 1 && selectedImg < modalImgsCount - 1){
-						$(".topArrow").show();
-						$(".downArrow").show();
-					} else if( modalImgsCount > 1 && selectedImg == modalImgsCount - 1){
-						$(".topArrow").hide();
-						$(".downArrow").show();
-					}  
+					var btRight = "<img class=\"topArrow\" onclick=\"onTopArrowClick();\" style=\"width:5%; display:none\" src=\"${resourcesRoot}/assets/img/right.png\"/>";
+					$("#modal_imgs").append(btRight);
+
+					$(".topArrow").show();
+					$(".downArrow").show();
 				}
 
 				function onDownArrowClick(){
@@ -768,15 +732,6 @@
 					
 					if(selectedImg <= 0){
 						selectedImg = 0;
-						$(".downArrow").hide();
-						if(modalImgsCount > 1){
-							$(".topArrow").show();
-						}else{
-							$(".topArrow").hide();
-						}
-					}else{
-						$(".topArrow").show();
-						$(".downArrow").show();
 					}
 
 					$("#modal_" + selectedImg).show();
@@ -789,13 +744,6 @@
 					
 					if(selectedImg >= modalImgsCount -1){
 						selectedImg = modalImgsCount - 1;
-						$(".topArrow").hide();
-						if(modalImgsCount > 1){
-							$(".downArrow").show();
-						}
-					}else{
-						$(".topArrow").show();
-						$(".downArrow").show();
 					}
 
 					$("#modal_" + selectedImg).show();
